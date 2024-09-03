@@ -1,0 +1,120 @@
+p{
+    color: #1995AD;
+    font-weight: bold;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    font-family: Arial;
+    background-color: #F1F1F2;
+    margin-bottom: 300px;
+}
+.todo-grid,.history-list{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 15px;
+    row-gap: 15px;
+    align-items: center;
+}
+.history-list{
+    row-gap: 12px;
+    padding-left: 10px;
+    grid-template-columns: 150px 100px 50px;
+}
+.todo-input-grid{
+    display: grid;
+    grid-template-columns: 200px 150px 100px 30px;
+    column-gap: 15px;
+    row-gap: 15px;
+    align-items: center;
+}
+.todo-input-grid{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    align-items: stretch;
+    margin-left: 30px;
+}
+
+.total-div{
+    border-color:#a1d6e2c3;
+    border-style: solid;
+    box-shadow: 5px 5px 20px 5px #576f74;
+    height: 400px;
+    width: 600px;
+    border-radius: 8px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: 440px;
+}
+.todo-grid{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.name-input, .due-date-input{
+    font-size: 15px;
+    padding: 6px;
+}
+.add-todo-button{
+    background-color: rgb(1, 14, 85);
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.delete-todo-button{
+    background-color: rgb(122, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#history{
+    background-color: #94e8f9f9;
+    margin-top: 10px;
+    
+    display: grid;
+    display: none;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 15px;
+    row-gap: 15px;
+    align-items: end;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 400px;
+    border:none;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    transition: 0.5s ease;
+    transform: translateY(0);
+}
+
+.completed{
+    font-size: 18px;
+    color: #204146;
+}
+.heading p{
+    font-size: 20px;
+    color: #204146;
+}
+.heading p{
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#toggle-btn{
+    background-color:#F1F1F2;
+    color: #204146;
+    border: none;
+}
+.hide-btn{
+    right: 0;
+}
